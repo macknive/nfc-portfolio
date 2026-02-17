@@ -12,14 +12,17 @@
     <style>
       body {
         background: oklch(92.9% 0.013 255.508);
+        background-image: url("assets/c.png");
+        background-size: cover;
+        background-position: 0px 105px;
       }
       .container {
         padding: 3rem 1rem;
       }
       .card {
-        background: #e5e7eb;
+        background: #f3f8ff;
         border-radius: 24px;
-        padding: 2.5rem 2rem;
+        padding: 2rem;
         max-width: 48rem;
         box-shadow:
           12px 12px 24px rgba(0, 0, 0, 0.12),
@@ -32,11 +35,11 @@
         align-items: center;
         justify-content: center;
         border-radius: 9999px;
-        background: #e5e7eb;
+        background: #f3f8ff;
         color: #4b5563;
         box-shadow:
           8px 8px 16px rgba(0, 0, 0, 0.12),
-          -8px -8px 16px rgba(255, 255, 255, 0.9);
+          -8px -8px 16px rgba(255, 255, 255, 0.4);
         transition:
           transform 150ms ease,
           box-shadow 150ms ease,
@@ -53,10 +56,18 @@
         outline: 2px solid #94a3b8;
         outline-offset: 4px;
       }
+      .role-badge {
+        display: inline-block;
+        padding: 0.35rem 1rem;
+        border-radius: 9999px;
+        background: linear-gradient(135deg, #dbeafe, #ecfeff);
+        color: #1f2937;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+      }
     </style>
   </head>
   <body class="min-h-screen">
-    <div class="relative mb-12">
+    <div class="relative mb-8">
       <img
         src="assets/bg.jpg"
         class="h-48 w-full object-cover"
@@ -64,22 +75,22 @@
       />
       <img
         src="assets/mee.jpg"
-        class="absolute left-1/2 top-full h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover shadow-[0_16px_30px_rgba(0,0,0,0.25)]"
+        class="absolute left-1/2 top-full h-40 w-40 -translate-x-1/2 -translate-y-[60%] rounded-full object-cover shadow-[0_16px_30px_rgba(0,0,0,0.25)]"
         alt="Profile photo"
       />
     </div>
     <div class="container">
       <h1 class="text-3xl font-bold text-center text-gray-800">Kevin Corpuz</h1>
       <h2 class="mb-6 text-center">
-        <span> Software Engineer </span>
+        <span class="role-badge"> Software Engineer </span>
       </h2>
       <div class="card">
         <p class="text-center text-gray-600 max-w-xl mx-auto">
-          Software engineer who builds scalable and reliable web applications
-          using modern JavaScript and TypeScript. I focus on writing clean,
-          maintainable code and creating seamless user experiences. I enjoy
-          solving complex problems and continuously learning new technologies to
-          deliver impactful solutions.
+          I'm a software engineer who builds scalable and reliable web
+          applications using modern JavaScript and TypeScript. I focus on
+          writing clean, maintainable code and creating seamless user
+          experiences. I enjoy solving complex problems and continuously
+          learning new technologies to deliver impactful solutions.
         </p>
       </div>
       <div class="mt-12 flex items-center justify-center gap-8">
