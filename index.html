@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background: oklch(92.9% 0.013 255.508);
+      }
+      .container {
+        padding: 3rem 1rem;
+      }
+      .card {
+        background: #e5e7eb;
+        border-radius: 24px;
+        padding: 2.5rem 2rem;
+        max-width: 48rem;
+        box-shadow:
+          12px 12px 24px rgba(0, 0, 0, 0.12),
+          -12px -12px 24px rgba(255, 255, 255, 0.9);
+      }
+      .icon-btn {
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        background: #e5e7eb;
+        color: #4b5563;
+        box-shadow:
+          8px 8px 16px rgba(0, 0, 0, 0.12),
+          -8px -8px 16px rgba(255, 255, 255, 0.9);
+        transition:
+          transform 150ms ease,
+          box-shadow 150ms ease,
+          color 150ms ease;
+      }
+      .icon-btn:hover {
+        transform: translateY(-2px);
+        color: #111827;
+        box-shadow:
+          10px 10px 20px rgba(0, 0, 0, 0.16),
+          -10px -10px 20px rgba(255, 255, 255, 0.9);
+      }
+      .icon-btn:focus-visible {
+        outline: 2px solid #94a3b8;
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <div class="relative mb-12">
+      <img
+        src="/assets/bg.jpg"
+        class="h-48 w-full object-cover"
+        alt="Background"
+      />
+      <img
+        src="/assets/me.jpg"
+        class="absolute left-1/2 top-full h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full object-cover shadow-[0_16px_30px_rgba(0,0,0,0.25)]"
+        alt="Profile photo"
+      />
+    </div>
+    <div class="container">
+      <h1 class="text-3xl font-bold text-center text-gray-800">Kevin Corpuz</h1>
+      <h2 class="mb-6 text-center">
+        <span> Software Engineer </span>
+      </h2>
+      <div class="card">
+        <p class="text-center text-gray-600 max-w-xl mx-auto">
+          Software engineer who builds scalable and reliable web applications
+          using modern JavaScript and TypeScript. I focus on writing clean,
+          maintainable code and creating seamless user experiences. I enjoy
+          solving complex problems and continuously learning new technologies to
+          deliver impactful solutions.
+        </p>
+      </div>
+      <div class="mt-12 flex items-center justify-center gap-8">
+        <a class="icon-btn" href="https://github.com/" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          class="icon-btn"
+          href="https://www.linkedin.com/"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a class="icon-btn" href="https://vuejs.org/" aria-label="Vue">
+          <i class="fa-brands fa-vuejs"></i>
+        </a>
+        <a
+          class="icon-btn"
+          href="https://www.instagram.com/"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
